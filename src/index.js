@@ -19,13 +19,3 @@ app.use(express.json());
 
 //Routes
 app.use('/', routes);
-
-app.get('/', (req, res) => {
-    const rutas = app._router.stack.filter(ruta => ruta.routes !== undefined).map(ruta => {
-        return {
-            path: ruta.route.path,
-            method: Object.keys(ruta.route.methods)[0]
-        }
-    });
-    res.json(rutas);
-});

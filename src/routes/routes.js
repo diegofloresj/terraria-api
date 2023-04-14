@@ -1,12 +1,14 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/ruta-primaria', (req, res) => {
-    res.send('Hola desde la ruta principal');
+router.get('/productos', (req, res) => {
+    const productos =  require('../assets/data/products.json')
+    res.send(productos)
 });
 
-router.get('/ruta-secundaria', (req, res) => {
-    res.send('Hola desde la ruta secundaria');
+router.get('/users', (req, res) => {
+    const users =  require('../assets/data/users.json')
+    res.send(users)
 });
 
 module.exports = router;
