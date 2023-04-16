@@ -18,7 +18,7 @@ npm install
 ```
 
 ## Contributing
-Contributing is pretty simple if you want to add new data, about NPCs, WEAPONS, CLASSES, add functionality, improve code, just [create a new pull request] (https://github.com/genshindev/api/pulls) with your changes and we will review it as soon as we have time.
+Contributing is pretty simple if you want to add new data, about NPCs, WEAPONS, CLASSES, add functionality, improve code, just [create a new pull request] (https://github.com/diegofloresj/terraria-api/pulls) with your changes and we will review it as soon as we have time.
 
 ## License
 Licensed under Open Software License v3.0
