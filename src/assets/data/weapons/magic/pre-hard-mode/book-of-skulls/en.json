@@ -1,6 +1,6 @@
 {
   "name": "Book of Skulls",
-  "type:": "magic",
+  "type": "magic",
   "internalItemId": 1313,
   "description": "The Book of Skulls is a Normal Mode Magic Weapon dropped by Skeletron or found in his Treasure Bag with a 10% / 33% chance. When used, it shoots a skull that advances, leaving a trail of flames in its wake. The skull doesn't bounce off blocks, it disappears if it hits one, it emits a bit of light, and it can go through a single monster (it disappears after hitting the second one).",
   "rarity": [
