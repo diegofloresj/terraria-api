@@ -1,6 +1,7 @@
 [
   {
     "name": "Water Bolt",
+    "type:": "magic",
     "internalItemId": 165,
     "description": "The Water Projectile is one of the first spells in the game, inside the dungeon, where Skeletron must be defeated before being able to enter. His image is a blue book camouflaged among other books.",
     "rarity": [
