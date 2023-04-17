@@ -1,0 +1,40 @@
+{
+  "name": "Crystal Storm",
+  "type:": "magic",
+  "internalItemId": 518,
+  "description": "The Crystal Storm is a book that allows you to cast (Crystal Shards)at an incredibly fast speed. It is one of the 5 Hard Mode books. These (Crystal Bullets) can bounce an unlimited number of times, but when it loses speed it will be destroyed if it hits a wall. This book does not contain any debuffs.",
+  "rarity": [
+    {
+      "level": 4,
+      "color": "light red"
+    }
+  ],
+  "damage": [
+    {
+      "pc": 32,
+      "consoles": [
+        {
+          "new-gen": 32,
+          "old-gen": 25
+        }
+      ],
+      "mobile": 32
+    }
+  ],
+  "recoil": "4 (Weak)",
+  "manaCost": [
+    {
+      "pc": 5,
+      "consoles": [
+        {
+          "new-gen": 5,
+          "old-gen": 4
+        }
+      ],
+      "mobile": 5
+    }
+  ],
+  "bestImprovement": "Mythical",
+  "obtaining": "Crafting",
+  "sale": "4 gold coins"
+}
