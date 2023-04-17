@@ -39,17 +39,21 @@ async function getEntity(folder) {
             const ruteFile = path.join(folder, name);
             const statusFile = await fs.lstat(ruteFile);
             return {
-                name: nombre,
-                isDirectory: statusFile.isDirectory()
+                name: name,
+                isDirectory: statusFile.isDirectory(),
+                path: ruteFile,
             };
         }));
-        const nameFiles = entities.filter(entity => !entity.isDirectory).map(entity => entity.name);
-        return nameFiles;
+        return entities;
     } catch (error) {
         console.error(error);
         return [];
     }
 }
+
+
+
+
 
 
 module.exports = {
