@@ -3,7 +3,7 @@ const app = express();
 const morgan = require('morgan');
 
 //Settings
-const routes = require('./routes/routes.js');
+const routes = require('./routes/routes')
 app.set('port', process.env.PORT || 3000)
 app.set('json spaces', 2)
 
