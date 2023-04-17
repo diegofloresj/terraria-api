@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Demon Scythe",
+    "internalItemId": 272,
+    "description": "The demonic scythe is a magic weapon in normal mode that can be dropped by the demon and the voodoo demon, two monsters from the underworld. When used, it shoots a scythe that advances in the direction of the cursor. The scythe gains speed as it moves forward and can pass through up to four monsters (disappears on hitting the fifth).",
+    "rarity": [
+      {
+        "level": 3,
+        "color": "orange"
+      }
+    ],
+    "damage": 35,
+    "recoil": "5 (Normal)",
+    "manaCost": [
+      {
+        "pc": 14,
+        "consoles": [
+          {
+            "new-gen": 10,
+            "old-gen-3DS": 10
+          }
+        ],
+        "mobile": 14
+      }
+    ],
+    "bestImprovement": "Mythical",
+    "obtaining": "Demons, Voodoo Demons ",
+    "sale": "1 gold coin and 50 silver coin"
+  }
+]
