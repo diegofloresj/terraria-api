@@ -1,31 +1,29 @@
-[
-  {
-    "name": "Golden Shower",
-    "type:": "magic",
-    "internalItemId": 1336,
-    "description": "The Golden Shower is a Hardmode magic weapon that can only be obtained on worlds with crimson. Fires a stream of ichor similar to the Water Rod but longer and faster, which can pass through up to 5 enemies, dealing Ichor to them.",
-    "rarity": [
-      {
-        "level": 4,
-        "color": "light red"
-      }
-    ],
-    "damage": [
-      {
-        "pc": 30,
-        "consoles": [
-          {
-            "new-gen": 30,
-            "old-gen": 21
-          }
-        ],
-        "mobile": 30
-      }
-    ],
-    "recoil": "4 (Weak)",
-    "manaCost": 7,
-    "bestImprovement": "Mythical",
-    "obtaining": "Craftingeon",
-    "sale": "4 gold coins"
-  }
-]
+{
+  "name": "Golden Shower",
+  "type:": "magic",
+  "internalItemId": 1336,
+  "description": "The Golden Shower is a Hardmode magic weapon that can only be obtained on worlds with crimson. Fires a stream of ichor similar to the Water Rod but longer and faster, which can pass through up to 5 enemies, dealing Ichor to them.",
+  "rarity": [
+    {
+      "level": 4,
+      "color": "light red"
+    }
+  ],
+  "damage": [
+    {
+      "pc": 30,
+      "consoles": [
+        {
+          "new-gen": 30,
+          "old-gen": 21
+        }
+      ],
+      "mobile": 30
+    }
+  ],
+  "recoil": "4 (Weak)",
+  "manaCost": 7,
+  "bestImprovement": "Mythical",
+  "obtaining": "Craftingeon",
+  "sale": "4 gold coins"
+}

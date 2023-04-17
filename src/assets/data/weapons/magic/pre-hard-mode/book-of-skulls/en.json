@@ -1,53 +1,51 @@
-[
-  {
-    "name": "Book of Skulls",
-    "type:": "magic",
-    "internalItemId": 1313,
-    "description": "The Book of Skulls is a Normal Mode Magic Weapon dropped by Skeletron or found in his Treasure Bag with a 10% / 33% chance. When used, it shoots a skull that advances, leaving a trail of flames in its wake. The skull doesn't bounce off blocks, it disappears if it hits one, it emits a bit of light, and it can go through a single monster (it disappears after hitting the second one).",
-    "rarity": [
-      {
-        "level": 2,
-        "color": "green"
-      }
-    ],
-    "damage": [
-      {
-        "pc": 29,
-        "consoles": [
-          {
-            "new-gen": 29,
-            "old-gen": 28
-          }
-        ],
-        "mobile": 28
-      }
-    ],
-    "recoil": "5 (Normal)",
-    "manaCost": [
-      {
-        "pc": 18,
-        "consoles": [
-          {
-            "new-gen": 18,
-            "old-gen-3DS": 22
-          }
-        ],
-        "mobile": 18
-      }
-    ],
-    "bestImprovement": "Mythical",
-    "obtaining": "Dungeon",
-    "sale": [
-      {
-        "pc": "1 gold coin and 50 silver coin",
-        "consoles": [
-          {
-            "new-gen": "1 gold coin and 50 silver coin",
-            "old-gen": "1 gold coin"
-          }
-        ],
-        "mobile": "1 gold coin and 50 silver coin"
-      }
-    ]
-  }
-]
+{
+  "name": "Book of Skulls",
+  "type:": "magic",
+  "internalItemId": 1313,
+  "description": "The Book of Skulls is a Normal Mode Magic Weapon dropped by Skeletron or found in his Treasure Bag with a 10% / 33% chance. When used, it shoots a skull that advances, leaving a trail of flames in its wake. The skull doesn't bounce off blocks, it disappears if it hits one, it emits a bit of light, and it can go through a single monster (it disappears after hitting the second one).",
+  "rarity": [
+    {
+      "level": 2,
+      "color": "green"
+    }
+  ],
+  "damage": [
+    {
+      "pc": 29,
+      "consoles": [
+        {
+          "new-gen": 29,
+          "old-gen": 28
+        }
+      ],
+      "mobile": 28
+    }
+  ],
+  "recoil": "5 (Normal)",
+  "manaCost": [
+    {
+      "pc": 18,
+      "consoles": [
+        {
+          "new-gen": 18,
+          "old-gen-3DS": 22
+        }
+      ],
+      "mobile": 18
+    }
+  ],
+  "bestImprovement": "Mythical",
+  "obtaining": "Dungeon",
+  "sale": [
+    {
+      "pc": "1 gold coin and 50 silver coin",
+      "consoles": [
+        {
+          "new-gen": "1 gold coin and 50 silver coin",
+          "old-gen": "1 gold coin"
+        }
+      ],
+      "mobile": "1 gold coin and 50 silver coin"
+    }
+  ]
+}
