@@ -16,7 +16,6 @@ async function getTypes(folder) {
     }
 }
 
-
 async function getAviableEntities(folder) {
     try {
         const files = await fs.readdir(folder);
@@ -50,11 +49,6 @@ async function getEntity(folder) {
         return [];
     }
 }
-
-
-
-
-
 
 module.exports = {
     getTypes,
