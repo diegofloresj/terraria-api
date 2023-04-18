@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "name": "Accesorio 1",
+        "description": "Este es el accesorio 1"
+        
+    },
+    {
+        "id": "2",
+        "name": "Accesorio 2",
+        "description": "Este es el accesorio 2"
+    },
+    {
+        "id": "3",
+        "name": "Accesorio 3",
+        "description": "Este es el accesorio 3"
+    }
+]

@@ -7,36 +7,30 @@ const {
     getEntity
 } = require('../utils/files.js')
 
-router.get('/', (req, res) => {
+router.get('/api', (req, res) => {
     const folder = 'src/assets/data';
     getTypes(folder)
         .then((nameFolder) => res.send(JSON.stringify(nameFolder)))
         .catch((error) => console.error(error));
 });
 
-//WEAPONS ROUTES
-router.get('/weapons', (req, res) => {
-    const folder = 'src/assets/data/weapons';
+router.get('/api/:type', (req, res) => {
+    const folder = `src/assets/data/${req.params.type}`;
     getAviableEntities(folder)
         .then((nameFolder) => res.send(JSON.stringify(nameFolder)))
         .catch((error) => console.error(error));
 });
 
-router.get('/weapons/:type', (req, res) => {
-    const folder = `src/assets/data/weapons/${req.params.type}`;
+router.get('/api/:type/:cat', (req, res) => {
+    const folder = `src/assets/data/${req.params.type}/${req.params.cat}`;
     getAviableEntities(folder)
         .then((nameFolder) => res.send(JSON.stringify(nameFolder)))
         .catch((error) => console.error(error));
 });
 
-router.get('/weapons/:type/:mode', (req, res) => {
-    const folder = `src/assets/data/weapons/${req.params.type}/${req.params.mode}`;
-    getAviableEntities(folder)
-        .then((nameFolder) => res.send(JSON.stringify(nameFolder)))
-        .catch((error) => console.error(error));
-});
-router.get('/weapons/:type/:mode/:name', async (req, res) => {
-    const folder = `src/assets/data/weapons/${req.params.type}/${req.params.mode}/${req.params.name}`;
+
+router.get('/api/:type/:cat/:name', async (req, res) => {
+    const folder = `src/assets/data/${req.params.type}/${req.params.cat}/${req.params.name}`;
     try {
         const entities = await getEntity(folder);
         const jsonEntity = entities.find(entity => entity.name === 'en.json' && !entity.isDirectory);
