@@ -7,30 +7,30 @@ const {
     getEntity
 } = require('../utils/files.js')
 
-router.get('/api', (req, res) => {
-    const folder = 'src/assets/data';
+router.get('/', (req, res) => {
+    const folder = 'assets/data';
     getTypes(folder)
         .then((nameFolder) => res.send(JSON.stringify(nameFolder)))
         .catch((error) => console.error(error));
 });
 
-router.get('/api/:type', (req, res) => {
-    const folder = `src/assets/data/${req.params.type}`;
+router.get('/:type', (req, res) => {
+    const folder = `assets/data/${req.params.type}`;
     getAviableEntities(folder)
         .then((nameFolder) => res.send(JSON.stringify(nameFolder)))
         .catch((error) => console.error(error));
 });
 
-router.get('/api/:type/:cat', (req, res) => {
-    const folder = `src/assets/data/${req.params.type}/${req.params.cat}`;
+router.get('/:type/:cat', (req, res) => {
+    const folder = `/assets/data/${req.params.type}/${req.params.cat}`;
     getAviableEntities(folder)
         .then((nameFolder) => res.send(JSON.stringify(nameFolder)))
         .catch((error) => console.error(error));
 });
 
 
-router.get('/api/:type/:cat/:name', async (req, res) => {
-    const folder = `src/assets/data/${req.params.type}/${req.params.cat}/${req.params.name}`;
+router.get('/:type/:cat/:name', async (req, res) => {
+    const folder = `assets/data/${req.params.type}/${req.params.cat}/${req.params.name}`;
     try {
         const entities = await getEntity(folder);
         const jsonEntity = entities.find(entity => entity.name === 'en.json' && !entity.isDirectory);
