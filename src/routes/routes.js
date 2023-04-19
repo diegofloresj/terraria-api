@@ -22,7 +22,7 @@ router.get('/:type', (req, res) => {
 });
 
 router.get('/:type/:cat', (req, res) => {
-    const folder = `/assets/data/${req.params.type}/${req.params.cat}`;
+    const folder = `assets/data/${req.params.type}/${req.params.cat}`;
     getAviableEntities(folder)
         .then((nameFolder) => res.send(JSON.stringify(nameFolder)))
         .catch((error) => console.error(error));
