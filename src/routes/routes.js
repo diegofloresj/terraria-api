@@ -48,7 +48,9 @@ router.get('/:type/:cat/:name', async (req, res) => {
         if (req.query.hasOwnProperty('lang')) {
             const lang = req.query.lang;
             const jsonLang = entities.find(entity => entity.name === `${lang}.json` && !entity.isDirectory);
-
+            if (!jsonLang) {
+                throw new Error('No specified entity found');
+            }
             const jsonDataLang = await new Promise((resolve, reject) => {
                 fs.readFile(jsonLang.path, 'utf-8', (err, data) => {
                     if (err) reject(err);
