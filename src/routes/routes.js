@@ -28,10 +28,11 @@ router.get('/:type/:cat', (req, res) => {
         .catch((error) => console.error(error));
 });
 
-
 router.get('/:type/:cat/:name', async (req, res) => {
+
     const folder = `assets/data/${req.params.type}/${req.params.cat}/${req.params.name}`;
     try {
+
         const entities = await getEntity(folder);
         const jsonEntity = entities.find(entity => entity.name === 'en.json' && !entity.isDirectory);
         if (!jsonEntity) {
@@ -43,8 +44,22 @@ router.get('/:type/:cat/:name', async (req, res) => {
                 resolve(data);
             });
         });
-        console.log(jsonEntity);
-        res.send(jsonData);
+        // Query data (lang)
+        if (req.query.hasOwnProperty('lang')) {
+            const lang = req.query.lang;
+            const jsonLang = entities.find(entity => entity.name === `${lang}.json` && !entity.isDirectory);
+
+            const jsonDataLang = await new Promise((resolve, reject) => {
+                fs.readFile(jsonLang.path, 'utf-8', (err, data) => {
+                    if (err) reject(err);
+                    resolve(data);
+                })
+            })
+            res.send(jsonDataLang)
+        } else {
+            res.send(jsonData);
+        }
+
     } catch (error) {
         console.error(error);
         res.status(500).send(error.message);
