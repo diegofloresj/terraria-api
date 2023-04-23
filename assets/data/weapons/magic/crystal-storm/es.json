@@ -1,0 +1,40 @@
+{
+  "name": "Tormenta de Cristal",
+  "type": "magico",
+  "internalItemId": 518,
+  "description": "La tormante de cristal es un libro que te permite lanzar (Fragmentos de cristal) a una velocidad increíblemente rápida. Es uno de los 5 libros del Modo Difícil. Estas (Balas de cristal) pueden rebotar un número ilimitado de veces, pero cuando pierde velocidad se destruirá si golpea una pared. Este libro no contiene ningún debuff.",
+  "rarity": [
+    {
+      "level": 4,
+      "color": "Rojo claro"
+    }
+  ],
+  "damage": [
+    {
+      "pc": 32,
+      "consoles": [
+        {
+          "new-gen": 32,
+          "old-gen": 25
+        }
+      ],
+      "mobile": 32
+    }
+  ],
+  "recoil": "4 (Débil)",
+  "manaCost": [
+    {
+      "pc": 5,
+      "consoles": [
+        {
+          "new-gen": 5,
+          "old-gen": 4
+        }
+      ],
+      "mobile": 5
+    }
+  ],
+  "bestImprovement": "Mitico",
+  "obtaining": "Crafteando",
+  "sale": "4 monedas de oro"
+}
