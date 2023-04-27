@@ -32,7 +32,6 @@ router.get('/:type/:cat/:name', async (req, res) => {
 
     const folder = `assets/data/${req.params.type}/${req.params.cat}/${req.params.name}`;
     try {
-
         const entities = await getEntity(folder);
         const jsonEntity = entities.find(entity => entity.name === 'en.json' && !entity.isDirectory);
         if (!jsonEntity) {
@@ -61,7 +60,6 @@ router.get('/:type/:cat/:name', async (req, res) => {
         } else {
             res.send(jsonData);
         }
-
     } catch (error) {
         console.error(error);
         res.status(500).send(error.message);
